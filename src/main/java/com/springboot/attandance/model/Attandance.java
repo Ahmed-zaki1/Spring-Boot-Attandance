@@ -2,6 +2,10 @@ package com.springboot.attandance.model;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+
+
+@Entity
 public class Attandance {
 
 public Attandance(int roll_No, String name, Date date) {
@@ -10,6 +14,9 @@ public Attandance(int roll_No, String name, Date date) {
 		Name = name;
 		this.date = date;
 	}
+public Attandance(int i, String name2, Date date2, boolean isDone) {
+	// TODO Auto-generated constructor stub
+}
 private int Roll_No;
 private String Name;
 private Date date;
